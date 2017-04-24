@@ -1,6 +1,6 @@
 <?php
 
-namespace Razorpay\Slack;
+namespace ChronicleStudio\Slack;
 
 use InvalidArgumentException;
 
@@ -10,7 +10,7 @@ class Message
      * Reference to the Slack client responsible for sending
      * the message.
      *
-     * @var \Razorpay\Slack\Client
+     * @var \ChronicleStudio\Slack\Client
      */
     protected $client;
 
@@ -89,7 +89,7 @@ class Message
     /**
      * Instantiate a new Message.
      *
-     * @param \Razorpay\Slack\Client $client
+     * @param \ChronicleStudio\Slack\Client $client
      *
      * @return void
      */
@@ -349,7 +349,7 @@ class Message
             return $this;
         }
 
-        throw new InvalidArgumentException('Attachment must be an instance of Razorpay\\Slack\\Attachment or a keyed array');
+        throw new InvalidArgumentException('Attachment must be an instance of ChronicleStudio\\Slack\\Attachment or a keyed array');
     }
 
     /**

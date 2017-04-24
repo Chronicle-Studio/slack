@@ -1,6 +1,6 @@
 <?php
 
-namespace Razorpay\Slack;
+namespace ChronicleStudio\Slack;
 
 class ActionConfirmation
 {

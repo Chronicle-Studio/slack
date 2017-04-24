@@ -1,6 +1,6 @@
 <?php
 
-namespace Razorpay\Slack;
+namespace ChronicleStudio\Slack;
 
 use GuzzleHttp\Client as Guzzle;
 use RuntimeException;
@@ -214,7 +214,7 @@ class Client
      * @param string $name      The name of the method
      * @param array  $arguments The method arguments
      *
-     * @return \Razorpay\Slack\Message
+     * @return \ChronicleStudio\Slack\Message
     */
     public function __call($name, $arguments)
     {
@@ -453,7 +453,7 @@ class Client
     /**
      * Create a new message with defaults
      *
-     * @return \Razorpay\Slack\Message
+     * @return \ChronicleStudio\Slack\Message
      */
     public function createMessage()
     {
@@ -475,7 +475,7 @@ class Client
     /**
      * Queue a message
      *
-     * @param \Razorpay\Slack\Message $message message
+     * @param \ChronicleStudio\Slack\Message $message message
      * @return void
      */
     public function queueMessage(Message $message, $numRetries, $queue = null)
@@ -519,7 +519,7 @@ class Client
     /**
      * Prepares the payload to be sent to the webhook
      *
-     * @param \Razorpay\Slack\Message $message The message to send
+     * @param \ChronicleStudio\Slack\Message $message The message to send
      *
      * @return array
      */
@@ -548,7 +548,7 @@ class Client
     /**
      * Get the attachments in array form
      *
-     * @param \Razorpay\Slack\Message $message message
+     * @param \ChronicleStudio\Slack\Message $message message
      *
      * @return array
      */
@@ -568,7 +568,7 @@ class Client
     /**
      * Send a message.
      *
-     * @param \Razorpay\Slack\Message $message
+     * @param \ChronicleStudio\Slack\Message $message
      * @return void
      */
     public function sendMessage(Message $message)
